@@ -7,6 +7,9 @@ Performance test:
     Score hash: f3415
     Evaluated 216320 in 4.484 seconds = 48242.64049955397 bds/sec
 
+    $ node --version
+    v12.16.3
+
 vs. the C++ version of this project:
 
     ./4x4/perf_test
