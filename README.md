@@ -1,16 +1,18 @@
 # BoggleTS
 
+See also [performance-boggle][C++] and [rusty-boggle][].
+
 Performance test:
 
     $ ts-node src/perf_test.ts
     Total score: 22925120 = 105.97781065088758 pts/bd
-    Score hash: f3415
-    Evaluated 216320 in 4.484 seconds = 48242.64049955397 bds/sec
+    Score hash: c1d3d
+    Evaluated 216320 in 4.366 seconds = 49546.49564819056 bds/sec
 
     $ node --version
     v12.16.3
 
-vs. the C++ version of this project:
+vs. the [C++][] version of this project:
 
     ./4x4/perf_test
     Loaded 172203 words into 385272-node Trie
@@ -20,5 +22,7 @@ vs. the C++ version of this project:
     Evaluated 216320 boards in 0.914723 seconds = 236486.913575 bds/sec
     ./4x4/perf_test: All tests passed!
 
-Obviously the stats don't match up, but using Node is a ~5x slowdown.
+So using Node is a ~5x slowdown.
 
+[C++]: https://github.com/danvk/performance-boggle
+[rusty-boggle]: https://github.com/danvk/rusty-boggle
