@@ -6,10 +6,12 @@ export function idx(char: string): number {
 
 export class Trie {
   isWord_: boolean;
+  mark: number;
   children: (Trie | undefined)[];
 
   constructor() {
     this.isWord_ = false;
+    this.mark = 0;
     this.children = Array.from({length: 26});
   }
 
